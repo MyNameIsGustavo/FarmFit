@@ -35,6 +35,26 @@ body{
     text-align: justify;
     margin: 2em 2em;
 }
+
+.botao-app{
+    background-color: var(--botao-azul-efeito);
+    width: 20em;
+    height: 4em;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.botao-app:hover{
+    background-color: rgb(114, 48, 48);
+    color: var(--brancoPrincipal);
+}
+
+
+.botao-app a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .rodape-lista{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
