@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
@@ -18,6 +19,28 @@
         </p>
         <button class="botao-app">Veja os nossos códigos!<a href="https://github.com/MyNameIsGustavo/FarmFitMobile"></a></button>
     </section>
+
+    <!-- Aguardando imagens do projeto.
+    <section class="carrosel">
+        <h2 class="carrosel-titulo">Protótipo da nossa solução.</h2>
+        
+        <div class="swiper">
+   
+            <div class="swiper-wrapper">
+            
+            <div class="swiper-slide"><img src="" alt=""></div>
+            <div class="swiper-slide"><img src="" alt=""></div>
+            <div class="swiper-slide"><img src="" alt=""></div>
+            <div class="swiper-slide"><img src="" alt=""></div>
+            <div class="swiper-slide"><img src="" alt=""></div>
+            ...
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    -->
 
     <section class="container">
         <img src="assets/horta.jpg" alt="imagem de uma pequena horta." class="container imagem-logo">
@@ -57,5 +80,16 @@
         <p class="rodape-texto">® FarmFit. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
         <p class="rodape-texto">FarmFit é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço FarmFit é comercializado por FarmFit Sistemas de Informática S.A., Rua Flex, 1000 - Liberdade, Sorocaba - SP, 04101-300, Brasil e CNPJ 01.010.101/0101-01</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 </html>
