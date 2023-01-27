@@ -36,17 +36,19 @@ body{
     margin: 2em 2em;
 }
 
-.botao-app{
+.botao-app, .botao-texto{
     background-color: var(--botao-azul-efeito);
     width: 20em;
     height: 4em;
     border-radius: 20px;
     border-style: none;
+    font-family: 'Inter';
 }
 
-.botao-app:hover{
+.botao-texto:hover{
     background-color: rgb(114, 48, 48);
     color: var(--brancoPrincipal);
+    font-weight: 700;
 }
 
 
