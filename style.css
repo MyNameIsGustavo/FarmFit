@@ -51,7 +51,6 @@ body{
     font-weight: 700;
 }
 
-
 .botao-app a{
     text-decoration: none;
     color: #FFFFFF;
@@ -67,6 +66,13 @@ body{
 
 .swiper-slide img{
     width: 100%;
+    border-radius: 5px;
+}
+
+.paragrafo-slider{
+    text-align: justify;
+    font-size: 9px;
+    padding: 0.5em 0.5em 0 0.5em;
 }
 
 .swiper-button-prev, .swiper-button-next{
