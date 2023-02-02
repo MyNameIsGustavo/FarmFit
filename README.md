@@ -55,7 +55,7 @@ O protótipo desenvolvido consiste em uma casa de 30 cm por 30cm e 22 cm de altu
 </div>
 <br> 
 Ademais, cabos flexíveis estão conectados ao telhado da residência para, juntamente com um sensor de fluxo de água, representar o sistema de captação de águas pluviais. Eles são ligados a um aquário acrílico, usado como tanque de estocagem do recurso, e o conectam ao sistema de irrigação do pequeno canteiro, composto por um sensor de umidade do solo e uma mini válvula solenoide. Ambos os sensores citados estão conectados a um ESP-32, o qual é mantido em uma caixa de passagem. 
-
+<br>
 O website, cuja página inicial pode ser vista em Figura 3, por sua vez, traz ao usuário um acesso fácil e rápido às informações coletadas pelos sensores. Ele foi estruturado usando o padrão proposto pelo framework Web do Python chamado Django. Esta ferramenta lida com o back-end (termo amplo que abrange operações no banco de dados, roteamento, autenticação, etc.), sendo responsável por atualizar dinamicamente os gráficos de umidade e fluxo d'água, visíveis nas Figuras 4 e 5, de acordo com novas entradas no banco de dados. O software XAMPP foi empregado a fim de hospedar um servidor local Apache, que permanece ativo para receber as requisições do ESP-32 contendo as leituras dos sensores, bem como um banco de dados MySQL, o qual é atualizado em seguida. Ademais, o Django oferece uma ORM nativa (camada entre o banco de dados e a linguagem em si) para facilitar a gestão do banco de dados. ChartJS, um API do JavaScript, foi utilizado no contexto de gerar gráficos com maior facilidade e nível de abstração, além de providenciar numerosas opções de estilização. Por fim, linguagens como HTML, CSS e JavaScript foram utilizadas no front-end, ou seja, aquilo que o usuário vê, de fato, ao acessar o site.
 
 ## __Orçamento__
@@ -66,16 +66,36 @@ Empregou-se a metodologia “bottom up”, uma estratégia cujo nome significa d
 
 Em razão do “bottom up”, três buscas diferentes para o preço de cada objeto foram feitas e, com a média dos valores encontrados, calculou-se o orçamento, como demonstrado na Figura 6. A estimativa final foi de R$ 198,81. Os links dos sites consultados estão no apêndice.
 
- <p> Figura 3 – Orçamento do Projeto </p>
- 
- <img src="assets/pecasusadas.png" height="300px">
+<div style="display:inline_block" align="center">
+  <p> Figura 3 – Orçamento do Projeto </p>
 
- Fonte – Elaboração Própria
+  <img src="assets/orcamento.png" height="150px">
+
+  Fonte – Elaboração Própria
  
 </div>
 
-### **Sigtemp Template**
-Foi criado um template para organizar os elementos. Foram adicionadas todas as tags com um caminho genérico **\\%Server%\%..\..\Element%.%..\Element%.%Element%.%Attribute%**, que por sua vez busca o *point* de acordo com o diretório gerado pelos nomes dos elementos.
+## __Retorno Esperado__
+
+Como consequência de um planejamento bem estruturado e organizado do projeto de maneira geral, espera-se um retorno considerando aspectos econômicos e sociais.
+<br>
+
+ Em relação a perspectiva tangível, pode-se destacar:
+ <ul>
+     <li> Otimização sustentável da utilização da água </li>
+     <li> Redução do consumo de água devido ao processo de captação </li>
+     <li> Redução de custos em consequência a economia de água </li>
+     <li> Melhor aproveitamento das águas pluviais </li>
+ </ul>
+ <br>
+ 
+ Em relação a perspectiva intangível, pode-se destacar:
+ <ul>
+     <li> Melhoria da administração dos recursos hídricos de pequenos e médios produtores </li>
+     <li> Melhoria da produtividade de maneira geral </li>
+     <li> Desenvolvimento de uma gestão de negócios mais sustentável </li>
+     <li> Possibilidade de obtenção de feedback sobre o processo, contribuindo para tomada de decisões mais conscientes </li>
+ </ul>
 
 ![](images/template.png)  
 
