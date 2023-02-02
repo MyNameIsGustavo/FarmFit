@@ -34,23 +34,45 @@ Depois de muito planejamento e pesquisa, foi decidido que o diferencial do proje
 
 O protótipo desenvolvido consiste em uma casa de 30 cm por 30cm e 22 cm de altura apoiada sobre uma base retangular de 80 cm por 50 cm, ambas feitas de madeira MDF e banhadas em membrana acrílica, um impermeabilizante também conhecido como manta acrílica líquida. Esta estrutura é mostrada em Figura 1 e o desenho das peças que a compõem em Figura 2. Dois potes feitos do mesmo material contendo uma pequena horta de mini alfaces estão apoiados sobre o suporte, representando as plantações existentes nas propriedades rurais. 
 
-<center> Figura 1 - Estrutura em Madeira MDF </center>
+<div style="display:inline_block" align="center">
 
+ <p>Figura 1 - Estrutura em Madeira MDF </p>
 
-### **PI System**
-<img src="images/LOGOOSI.png" height="90px"> 
+ <img src="assets/estruturaemmdf.png" height="250px">
 
-O PI System™ é uma infraestrutura empresarial aberta que conecta dados baseados em sensores, sistemas e pessoas. O resultado é: informações acionáveis e em tempo real que capacitam as empresas a otimizar e transformar seus negócios.
+ Fonte – Elaboração Própria
+ 
+</div>
+<br>
+<div style="display:inline_block" align="center">
 
-## __Guia de Implementação__
+ <p> Figura 2 – Desenho das peças usadas </p>
+ 
+ <img src="assets/pecasusadas.png" height="300px">
 
-### **PI Data Archive**
+ Fonte – Elaboração Própria
+ 
+</div>
+<br> 
+Ademais, cabos flexíveis estão conectados ao telhado da residência para, juntamente com um sensor de fluxo de água, representar o sistema de captação de águas pluviais. Eles são ligados a um aquário acrílico, usado como tanque de estocagem do recurso, e o conectam ao sistema de irrigação do pequeno canteiro, composto por um sensor de umidade do solo e uma mini válvula solenoide. Ambos os sensores citados estão conectados a um ESP-32, o qual é mantido em uma caixa de passagem. 
 
-Foram criados 30 *points* para armazenar as informações de cada atributo no *Data Archive*.
+O website, cuja página inicial pode ser vista em Figura 3, por sua vez, traz ao usuário um acesso fácil e rápido às informações coletadas pelos sensores. Ele foi estruturado usando o padrão proposto pelo framework Web do Python chamado Django. Esta ferramenta lida com o back-end (termo amplo que abrange operações no banco de dados, roteamento, autenticação, etc.), sendo responsável por atualizar dinamicamente os gráficos de umidade e fluxo d'água, visíveis nas Figuras 4 e 5, de acordo com novas entradas no banco de dados. O software XAMPP foi empregado a fim de hospedar um servidor local Apache, que permanece ativo para receber as requisições do ESP-32 contendo as leituras dos sensores, bem como um banco de dados MySQL, o qual é atualizado em seguida. Ademais, o Django oferece uma ORM nativa (camada entre o banco de dados e a linguagem em si) para facilitar a gestão do banco de dados. ChartJS, um API do JavaScript, foi utilizado no contexto de gerar gráficos com maior facilidade e nível de abstração, além de providenciar numerosas opções de estilização. Por fim, linguagens como HTML, CSS e JavaScript foram utilizadas no front-end, ou seja, aquilo que o usuário vê, de fato, ao acessar o site.
 
-*Points* criados para armazenar informações dos sensores Sigtemp.
+## __Orçamento__
 
-![](images/points.PNG)
+O planejamento é uma etapa fundamental para o sucesso de um projeto. Nesse contexto, a pesquisa de valores dos itens e a realização do orçamento são mecanismos de controle imprescindíveis. É com isso que as informações sobre o desempenho financeiro da proposta em questão são extraídas.
+
+Empregou-se a metodologia “bottom up”, uma estratégia cujo nome significa de baixo para cima, para o cálculo do orçamento. Nela são analisados, primeiramente, os aspectos financeiros e, posteriormente, a economia da empresa como um todo. Este método possui uma análise fundamentalista, sendo uma maneira de detalhar e verificar profundamente os dados de uma companhia (Jehniffer,2021).
+
+Em razão do “bottom up”, três buscas diferentes para o preço de cada objeto foram feitas e, com a média dos valores encontrados, calculou-se o orçamento, como demonstrado na Figura 6. A estimativa final foi de R$ 198,81. Os links dos sites consultados estão no apêndice.
+
+ <p> Figura 3 – Orçamento do Projeto </p>
+ 
+ <img src="assets/pecasusadas.png" height="300px">
+
+ Fonte – Elaboração Própria
+ 
+</div>
 
 ### **Sigtemp Template**
 Foi criado um template para organizar os elementos. Foram adicionadas todas as tags com um caminho genérico **\\%Server%\%..\..\Element%.%..\Element%.%Element%.%Attribute%**, que por sua vez busca o *point* de acordo com o diretório gerado pelos nomes dos elementos.
