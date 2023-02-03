@@ -67,14 +67,15 @@
 
 <p> Empregou-se a metodologia “bottom up”, uma estratégia cujo nome significa de baixo para cima, para o cálculo do orçamento. Nela são analisados, primeiramente, os aspectos financeiros e, posteriormente, a economia da empresa como um todo. Este método possui uma análise fundamentalista, sendo uma maneira de detalhar e verificar profundamente os dados de uma companhia (Jehniffer,2021). </p>
 
-<p> Em razão do “bottom up”, três buscas diferentes para o preço de cada objeto foram feitas e, com a média dos valores encontrados, calculou-se o orçamento, como demonstrado na Figura 6. A estimativa final foi de R$ 198,81. Os links dos sites consultados estão no apêndice. </p>
+<p> Em razão do “bottom up”, três buscas diferentes para o preço de cada objeto foram feitas e, com a média dos valores encontrados, calculou-se o orçamento, como demonstrado na Figura 6. A estimativa final foi de R$ 310,48. Os links dos sites consultados estão no apêndice. </p>
 
 <div style="display:inline_block" align="center">
   <p> Figura 3 – Orçamento do Projeto </p>
 
-  <img src="assets/orcamento.png" height="150px">
+  <img src="https://user-images.githubusercontent.com/99259327/216590797-198de392-8d88-41b2-9e85-e46ed66f51f2.png">
 
   Fonte – Elaboração Própria
+ 
  
 </div>
 
